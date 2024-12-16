@@ -1,0 +1,17 @@
+[package]
+name = "cbz-merger"
+version = "0.1.0"
+edition = "2021"
+authors = ["Isaac McFadyen <isaac@imcf.me>"]
+description = "Merge multiple CBZ files into one"
+
+[dependencies]
+zip = "2.2.1"
+clap = { version = "4.5.23", features = ["derive"] }
+color-eyre = "0.6.3"
+eyre = "0.6.12"
+tempfile = "3.14.0"
+tokio = { version = "1.42.0", features = ["full"] }
+tracing = "0.1.41"
+tracing-subscriber = "0.3.19"
+indicatif = "0.17.9"

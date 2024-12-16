@@ -8,9 +8,11 @@ use zip::{write::SimpleFileOptions, CompressionMethod, ZipArchive, ZipWriter};
 #[clap(about, version, author)]
 pub struct Args {
     #[clap(num_args = 1..)]
+    /// The path(s) of the input .cbz files to merge.
     pub files: Vec<PathBuf>,
 
     #[clap(short = 'o', long)]
+    /// The .cbz file to write to.
     pub output: PathBuf,
 }
 

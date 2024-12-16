@@ -14,8 +14,7 @@ pub struct Args {
     pub output: PathBuf,
 }
 
-#[tokio::main]
-async fn main() -> eyre::Result<()> {
+fn main() -> eyre::Result<()> {
     tracing_subscriber::fmt::init();
     color_eyre::install()?;
 
